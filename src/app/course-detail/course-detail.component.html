@@ -1,0 +1,12 @@
+
+<div *ngIf="course">
+
+    <h2>{{course.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{course.id}}</div>
+    <div>
+      <label for="course-name">Hero name: </label>
+      <input id="course-name" [(ngModel)]="course.name" placeholder="name">
+    </div>
+    
+  </div>
+  <button type="button" (click)="save()">save</button>
